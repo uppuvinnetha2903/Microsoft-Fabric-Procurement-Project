@@ -27,6 +27,12 @@ Both land in the **Bronze** layer, then flow through:
 - Azure Blob Storage
 - Power BI
 
+## Sample Data
+
+The `/sample_data` folder contains synthetic dimension and fact data structured to match the Bronze layer inputs, so the notebooks in this repo are runnable end-to-end. See `sample_data/data_dictionary.md` for full column definitions.
+
+> Note: all vendor names, values, and identifiers are synthetically generated for demonstration purposes and do not represent any real organization's data.
+
 ## Star Schema & Semantic Model
 
 **Fact table:** `gold_fact_procurement`
@@ -88,6 +94,7 @@ Each stage is validated before promotion — deployments are tracked with timest
 - `/SQL` — Stored procedures for pipeline orchestration
 - `/Architecture` — Architecture diagrams
 - `/Screenshots` — Dashboard, pipeline, and data model screenshots
+- `/sample_data` — Synthetic sample source data (dimensions and facts) with a full data dictionary, so the notebooks can be run end-to-end
 
 ## What This Project Demonstrates
 
@@ -96,4 +103,4 @@ Each stage is validated before promotion — deployments are tracked with timest
 - Dimensional modeling (star schema) with properly defined semantic model relationships
 - Data quality validation, including root-cause diagnosis of referential integrity issues (orphaned fact records against dimension keys)
 - Incremental load patterns using watermarking
-- Multi-environment deployment (Dev → QA → Production)
+- CI/CD-style release management using Fabric Deployment Pipelines across Dev, QA, and Production workspaces
