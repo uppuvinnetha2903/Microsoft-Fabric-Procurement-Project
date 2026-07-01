@@ -31,11 +31,10 @@ Both land in the **Bronze** layer, then flow through:
 
 The `/sample_data` folder contains synthetic source data matching the two real ingestion paths used in this project:
 
-- `Azure_Blob_Source/` — master/reference (dimension) data, loaded via a OneLake shortcut
-- `SQL_Source/` — transactional (fact) data, loaded via Fabric Data Pipelines
+- [`Azure_Blob_Source/`](sample_data/Azure_Blob_Source) — master/reference (dimension) data, loaded via a OneLake shortcut
+- [`SQL_Source/`](sample_data/SQL_Source) — transactional (fact) data, loaded via Fabric Data Pipelines
 
-See `sample_data/data_dictionary.md` for full column definitions of every source file.
-
+See [`sample_data/data_dictionary.md`](sample_data/data_dictionary.md) for full column definitions of every source file.
 > Note: all vendor names, values, and identifiers are synthetically generated for demonstration purposes and do not represent any real organization's data. In the live pipeline, SQL_Source data is read directly from SQL Server via a database connection, not from files — the CSVs here are a static extract provided so the notebooks are runnable without a live database.
 
 
