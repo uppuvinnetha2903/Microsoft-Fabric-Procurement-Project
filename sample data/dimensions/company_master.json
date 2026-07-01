@@ -1,0 +1,42 @@
+[
+  {
+    "Company_Code": "1000",
+    "Company_Name": "UK Manufacturing Ltd",
+    "Country": "GB",
+    "Currency": "GBP",
+    "Region": "Europe",
+    "Industry": "Manufacturing",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Company_Code": "2000",
+    "Company_Name": "France Manufacturing SA",
+    "Country": "FR",
+    "Currency": "EUR",
+    "Region": "Europe",
+    "Industry": "Manufacturing",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Company_Code": "3000",
+    "Company_Name": "Germany Manufacturing GmbH",
+    "Country": "DE",
+    "Currency": "EUR",
+    "Region": "Europe",
+    "Industry": "Manufacturing",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Company_Code": "4000",
+    "Company_Name": "US Manufacturing Inc",
+    "Country": "US",
+    "Currency": "USD",
+    "Region": "North America",
+    "Industry": "Manufacturing",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  }
+]

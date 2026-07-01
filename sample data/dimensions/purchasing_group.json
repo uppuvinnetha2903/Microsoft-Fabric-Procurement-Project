@@ -1,0 +1,162 @@
+[
+  {
+    "Purchasing_Group_ID": "1",
+    "Purchasing_Group_Name": "Purchasing Group 1",
+    "Department": "IT Procurement",
+    "Manager": "Manager 01",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Purchasing_Group_ID": "2",
+    "Purchasing_Group_Name": "Purchasing Group 2",
+    "Department": "MRO Procurement",
+    "Manager": "Manager 02",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Purchasing_Group_ID": "3",
+    "Purchasing_Group_Name": "Purchasing Group 3",
+    "Department": "Direct Materials",
+    "Manager": "Manager 03",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Purchasing_Group_ID": "4",
+    "Purchasing_Group_Name": "Purchasing Group 4",
+    "Department": "Services",
+    "Manager": "Manager 04",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Purchasing_Group_ID": "5",
+    "Purchasing_Group_Name": "Purchasing Group 5",
+    "Department": "Indirect Procurement",
+    "Manager": "Manager 05",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Purchasing_Group_ID": "6",
+    "Purchasing_Group_Name": "Purchasing Group 6",
+    "Department": "Logistics",
+    "Manager": "Manager 06",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Purchasing_Group_ID": "7",
+    "Purchasing_Group_Name": "Purchasing Group 7",
+    "Department": "Capital Projects",
+    "Manager": "Manager 07",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Purchasing_Group_ID": "8",
+    "Purchasing_Group_Name": "Purchasing Group 8",
+    "Department": "IT Procurement",
+    "Manager": "Manager 08",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Purchasing_Group_ID": "9",
+    "Purchasing_Group_Name": "Purchasing Group 9",
+    "Department": "MRO Procurement",
+    "Manager": "Manager 09",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Purchasing_Group_ID": "10",
+    "Purchasing_Group_Name": "Purchasing Group 10",
+    "Department": "Direct Materials",
+    "Manager": "Manager 10",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Purchasing_Group_ID": "11",
+    "Purchasing_Group_Name": "Purchasing Group 11",
+    "Department": "Services",
+    "Manager": "Manager 11",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Purchasing_Group_ID": "12",
+    "Purchasing_Group_Name": "Purchasing Group 12",
+    "Department": "Indirect Procurement",
+    "Manager": "Manager 12",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Purchasing_Group_ID": "13",
+    "Purchasing_Group_Name": "Purchasing Group 13",
+    "Department": "Logistics",
+    "Manager": "Manager 13",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Purchasing_Group_ID": "14",
+    "Purchasing_Group_Name": "Purchasing Group 14",
+    "Department": "Capital Projects",
+    "Manager": "Manager 14",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Purchasing_Group_ID": "15",
+    "Purchasing_Group_Name": "Purchasing Group 15",
+    "Department": "IT Procurement",
+    "Manager": "Manager 15",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Purchasing_Group_ID": "16",
+    "Purchasing_Group_Name": "Purchasing Group 16",
+    "Department": "MRO Procurement",
+    "Manager": "Manager 16",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Purchasing_Group_ID": "17",
+    "Purchasing_Group_Name": "Purchasing Group 17",
+    "Department": "Direct Materials",
+    "Manager": "Manager 17",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Purchasing_Group_ID": "18",
+    "Purchasing_Group_Name": "Purchasing Group 18",
+    "Department": "Services",
+    "Manager": "Manager 18",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Purchasing_Group_ID": "19",
+    "Purchasing_Group_Name": "Purchasing Group 19",
+    "Department": "Indirect Procurement",
+    "Manager": "Manager 19",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  },
+  {
+    "Purchasing_Group_ID": "20",
+    "Purchasing_Group_Name": "Purchasing Group 20",
+    "Department": "Logistics",
+    "Manager": "Manager 20",
+    "Created_Date": "2026-05-31",
+    "Last_Modified_Date": "2026-06-30"
+  }
+]
