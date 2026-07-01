@@ -31,6 +31,7 @@ Both land in the **Bronze** layer, then flow through:
 
 The `/sample_data` folder contains synthetic dimension and fact data structured to match the Bronze layer inputs, so the notebooks in this repo are runnable end-to-end. See `sample_data/data_dictionary.md` for full column definitions.
 
+> Note: in the live pipeline, SQL_Source data is read directly from SQL Server via a database connection, not from files — the CSVs here are a static extract provided so the notebooks are runnable without a live database.
 > Note: all vendor names, values, and identifiers are synthetically generated for demonstration purposes and do not represent any real organization's data.
 
 ## Star Schema & Semantic Model
