@@ -27,30 +27,15 @@ Both land in the **Bronze** layer, then flow through:
 - Azure Blob Storage
 - Power BI
 
-## Star Schema Data Model
+## Star Schema & Semantic Model
 
 **Fact table:** `gold_fact_procurement`
 
 **Dimension tables:** `gold_dim_vendor`, `gold_dim_material`, `gold_dim_plant`, `gold_dim_company`, `gold_dim_cost_center`, `gold_dim_currency`, `gold_dim_purchase_group`, `gold_dim_date`
 
-![Data Model](Screenshots/star_schema.png)
+One-to-many relationships are defined between the fact table and each dimension on its natural key (Vendor_ID, Material_ID, Plant_ID, Cost_Center_ID, Currency_Code, Purchasing_Group_ID, Date_Key), enabling correct cross-filtering across all report visuals without manual DAX joins.
 
-## Semantic Model & Relationships
-
-Built the Power BI semantic model directly on top of the Gold layer, defining one-to-many relationships between `gold_fact_procurement` and each dimension table:
-
-- `gold_dim_vendor` (Vendor_ID)
-- `gold_dim_material` (Material_ID)
-- `gold_dim_plant` (Plant_ID)
-- `gold_dim_company` (Company_Code)
-- `gold_dim_cost_center` (Cost_Center_ID)
-- `gold_dim_currency` (Currency_Code)
-- `gold_dim_purchase_group` (Purchasing_Group_ID)
-- `gold_dim_date` (Date_Key)
-
-This enables cross-filtering across all report visuals — filtering by vendor, plant, or date automatically slices the fact table correctly, without needing manual DAX joins in every measure.
-
-![Semantic Model](Screenshots/semantic_model.png)
+![Star Schema and Semantic Model](Screenshots/Star_schema.png)
 
 ## Pipeline Overview
 
@@ -61,7 +46,15 @@ This enables cross-filtering across all report visuals — filtering by vendor, 
 - Data quality validation notebook checking for duplicate records, referential integrity, and dimension completeness at the Gold layer
 - Three-environment deployment: Dev → QA → Production
 
-![Pipeline](Screenshots/master_pipeline.png)
+### Ingestion pipeline
+Uses a `Lookup` activity to fetch the list of source tables, then a `ForEach` loop dynamically executes stored procedures per table, with watermark tracking for incremental loads.
+
+![Ingestion Pipeline](Screenshots/Pipeline_procurement_ingestion.png)
+
+### Master orchestration pipeline
+Chains the ingestion pipeline with the Bronze→Silver→Gold notebooks in sequence.
+
+![Master Pipeline](Screenshots/master_pipeline.png)
 
 ## Dashboards & Reports
 
@@ -70,6 +63,12 @@ This enables cross-filtering across all report visuals — filtering by vendor, 
 
 ### Operations Report
 ![Operations Report](Screenshots/operations_report.png)
+
+### Executive Dashboard
+![Executive Dashboard](Screenshots/Procurement_executive_dashboard.png)
+
+### Operations Dashboard
+![Operations Dashboard](Screenshots/Procurement_dashboard.png)
 
 ## Repository Structure
 
