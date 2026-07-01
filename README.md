@@ -47,6 +47,7 @@ One-to-many relationships are defined between the fact table and each dimension 
 
 - Two distinct ingestion patterns: OneLake shortcut (Blob) and Data Pipelines (SQL Server)
 - Incremental loading with watermarking for the SQL source
+- Incremental loading is driven by a dedicated `Watermark_Procurement` table (tracking `Last_Modified_Date` per source table), with full run auditing in `Pipeline_Execution_History`. See [`SQL/sql_orchestration_tables.md`](SQL/sql_orchestration_tables.md) for the schema and load mechanism.
 - `ForEach`-based dynamic ingestion across source tables
 - Automated stored procedure execution for pipeline start/end logging
 - Data quality validation notebook checking for duplicate records, referential integrity, and dimension completeness at the Gold layer
