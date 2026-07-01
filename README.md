@@ -47,7 +47,7 @@ One-to-many relationships are defined between the fact table and each dimension 
 
 - Two distinct ingestion patterns: OneLake shortcut (Blob) and Data Pipelines (SQL Server)
 - Incremental loading with watermarking for the SQL source
-- Incremental loading is driven by a dedicated `Watermark_Procurement` table (tracking `Last_Modified_Date` per source table), with full run auditing in `Pipeline_Execution_History`. See [`SQL/sql_orchestration_tables.md`](SQL/sql_orchestration_tables.md) for the schema and load mechanism.
+- Incremental loading is driven by a dedicated `Watermark_Procurement` table (tracking `Last_Modified_Date` per source table), with full run auditing in `Pipeline_Execution_History`. See [`SQL/orchestration_tables.sql`](SQL/orchestration_tables.sql) for the table definitions and load mechanism.
 - `ForEach`-based dynamic ingestion across source tables
 - Automated stored procedure execution for pipeline start/end logging
 - Data quality validation notebook checking for duplicate records, referential integrity, and dimension completeness at the Gold layer
@@ -94,7 +94,7 @@ Each stage is validated before promotion — deployments are tracked with timest
 ## Repository Structure
 
 - `/Notebooks` — PySpark notebooks (Bronze→Silver dimension/fact, Silver→Gold, Gold data quality checks) and the source-to-target mapping specification
-- `/SQL` — Stored procedures for pipeline orchestration
+- `/SQL` — Stored procedures and orchestration table definitions for pipeline processing and incremental loads
 - `/Architecture` — Architecture diagrams
 - `/Screenshots` — Dashboard, pipeline, and data model screenshots
 - `/sample_data` — Synthetic sample source data (dimensions and facts) with a full data dictionary, so the notebooks can be run end-to-end
