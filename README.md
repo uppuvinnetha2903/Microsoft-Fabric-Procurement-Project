@@ -13,14 +13,16 @@ Medallion architecture (Bronze → Silver → Gold) built entirely in Microsoft 
 - Microsoft Fabric (OneLake, Lakehouse, Data Pipelines)
 - PySpark Notebooks
 - Delta Lake
-- Azure SQL Database
+- Fabric SQL Database
+- Azure Blob
+- SQL
 - Power BI
 
 ## Star Schema Data Model
 Fact tables: fact_purchase_order, fact_goods_receipt, fact_invoice_receipt
 Dimensions: dim_vendor, dim_material, dim_plant, dim_cost_center, dim_purchasing_group, dim_company, dim_date
 
-![Data Model](Screenshots/star_schema.png)
+[Data Model](Screenshots/star_schema.png)
 
 ## Pipeline Overview
 - Incremental loading with watermarking
@@ -28,14 +30,14 @@ Dimensions: dim_vendor, dim_material, dim_plant, dim_cost_center, dim_purchasing
 - Automated stored procedure execution (start/end logging)
 - Three-environment deployment: Dev → QA → Prod
 
-![Pipeline](Screenshots/master_pipeline.png)
+[Pipeline](Screenshots/master_pipeline.png)
 
 ## Dashboards & Reports
 ### Executive Report
-![Executive Report](Screenshots/executive_report.png)
+[Executive Report](Screenshots/executive_report.png)
 
 ### Operations Report
-![Operations Report](Screenshots/operations_report.png)
+[Operations Report](Screenshots/operations_report.png)
 
 ## Repository Structure
 - `/Notebooks` – PySpark notebooks (Bronze→Silver, Silver→Gold, data quality checks)
