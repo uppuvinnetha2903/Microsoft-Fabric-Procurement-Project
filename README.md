@@ -6,7 +6,7 @@ End-to-end Data Engineering & Analytics solution built in Microsoft Fabric. Feat
 
 Medallion architecture (Bronze → Silver → Gold) built entirely in Microsoft Fabric, fed by two source systems using two different ingestion patterns:
 
-- **Azure Blob Storage** — connected via a **OneLake shortcut**, referencing the data directly without copying it into the lakehouse.
+- **Azure Blob Storage** (CSV and JSON source files) — connected via a **OneLake shortcut**, referencing the data directly without copying it into the lakehouse.
 - **On-prem SQL Server** — loaded via **Fabric Data Pipelines**, using incremental loads with watermarking to only pull new/changed records on each run.
 
 Both land in the **Bronze** layer, then flow through:
@@ -52,6 +52,8 @@ One-to-many relationships are defined between the fact table and each dimension 
 - Data quality validation notebook checking for duplicate records, referential integrity, and dimension completeness at the Gold layer
 - Three-environment deployment: Dev → QA → Production
 
+Transformation logic for each Bronze source table is documented in [`Notebooks/mapping_specification.md`](Notebooks/mapping_specification.md), specifying source data types, business rules, and the PySpark casting/validation logic applied per column.
+
 ### Ingestion pipeline
 Uses a `Lookup` activity to fetch the list of source tables, then a `ForEach` loop dynamically executes stored procedures per table, with watermark tracking for incremental loads.
 
@@ -90,7 +92,7 @@ Each stage is validated before promotion — deployments are tracked with timest
 
 ## Repository Structure
 
-- `/Notebooks` — PySpark notebooks (Bronze→Silver dimension/fact, Silver→Gold, Gold data quality checks)
+- `/Notebooks` — PySpark notebooks (Bronze→Silver dimension/fact, Silver→Gold, Gold data quality checks) and the source-to-target mapping specification
 - `/SQL` — Stored procedures for pipeline orchestration
 - `/Architecture` — Architecture diagrams
 - `/Screenshots` — Dashboard, pipeline, and data model screenshots
@@ -100,6 +102,7 @@ Each stage is validated before promotion — deployments are tracked with timest
 
 - End-to-end data pipeline design in a modern lakehouse platform
 - Correct use of OneLake shortcuts vs. data pipelines depending on source type
+- Deliberate source-to-target mapping design, including data type decisions, business rule enforcement, and cross-field validation, ahead of implementation
 - Dimensional modeling (star schema) with properly defined semantic model relationships
 - Data quality validation, including root-cause diagnosis of referential integrity issues (orphaned fact records against dimension keys)
 - Incremental load patterns using watermarking
