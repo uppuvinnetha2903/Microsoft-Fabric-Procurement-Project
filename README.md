@@ -56,6 +56,18 @@ Chains the ingestion pipeline with the Bronze→Silver→Gold notebooks in seque
 
 ![Master Pipeline](Screenshots/master_pipeline.png)
 
+## Deployment Pipeline
+
+Three-stage deployment across isolated environments, promoting workspace items (notebooks, pipelines, semantic models, reports) from Development through to Production:
+
+- **Development** — `WS_Procurement_DEV`
+- **Test** — `WS_Procurement_QA`
+- **Production** — `WS_Procurement_PROD`
+
+Each stage is validated before promotion — deployments are tracked with timestamps and status, with the ability to compare stage items and review deployment history.
+
+![Deployment Pipeline](Screenshots/deployment_pipeline.png)
+
 ## Dashboards & Reports
 
 ### Executive Report
