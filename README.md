@@ -113,3 +113,12 @@ Each stage is validated before promotion — deployments are tracked with timest
 - Data quality validation, including root-cause diagnosis of referential integrity issues (orphaned fact records against dimension keys)
 - Incremental load patterns using watermarking
 - CI/CD-style release management using Fabric Deployment Pipelines across Dev, QA, and Production workspaces
+
+## 👩‍💻 Author
+
+**Vineetha Uppu**  
+Data Engineer — Microsoft Fabric | SAP BODS | ETL & Data Migration
+
+🔗 [LinkedIn](https://www.linkedin.com/in/vineetha-uppu-7b15b9334)  
+🐙 [GitHub](https://github.com/uppuvinnetha2903)
+
