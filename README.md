@@ -4,7 +4,9 @@ End-to-end Data Engineering & Analytics solution built in Microsoft Fabric. Feat
 
 ---
 **Business Problem**
+
 Multinational manufacturing organisations operating across multiple countries and currencies face significant challenges in managing their Procure-to-Pay (P2P) process:
+
 No single view of spend across vendors, plants and legal entities operating in different currencies
 
 Manual reporting — procurement teams spending hours pulling data from disparate systems with no automated refresh
@@ -18,14 +20,36 @@ Currency inconsistency — POs raised in USD, EUR, GBP and INR making spend comp
 **Solution**
 
 This project delivers an automated, end-to-end P2P Analytics Platform built on Microsoft Fabric that:
+
 Consolidates procurement data from SQL Server and Azure Blob Storage into a single OneLake Lakehouse
+
 Automates daily incremental data loads via metadata-driven Fabric Pipelines with full audit logging
+
 Applies 25+ data quality transformations in PySpark across 5 fact tables and 8 dimension tables
+
 Normalises all spend to GBP using live exchange rates enabling like-for-like comparison across 4 currencies
+
 Delivers a Power BI Executive Dashboard with KPIs for procurement leadership updated on every pipeline run
 
 **Business KPIs Delivered**
-KPIBusiness Question AnsweredTotal Spend (GBP)How much are we spending across all companies?Open PO CountHow many orders are still outstanding?Avg Days to ReceiveHow fast are our suppliers delivering?Avg Days to InvoiceHow efficient is our invoice processing?Delivery PerformanceWhich suppliers consistently deliver on time?Blocked Invoice %Where are payment bottlenecks occurring?Spend by VendorWho are our top suppliers by spend?Spend by Material TypeWhat categories drive the most cost?
+
+KPIBusiness Question Answered
+
+Total Spend (GBP)---How much are we spending across all companies?
+
+Open PO Count---How many orders are still outstanding?
+
+Avg Days to Receive---How fast are our suppliers delivering?
+
+Avg Days to Invoice---How efficient is our invoice processing?
+
+Delivery Performance---Which suppliers consistently deliver on time?
+
+Blocked Invoice %---Where are payment bottlenecks occurring?
+
+Spend by Vendor---Who are our top suppliers by spend?
+
+Spend by Material Type---What categories drive the most cost?
 
 ## Architecture
 
