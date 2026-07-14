@@ -6,9 +6,13 @@ End-to-end Data Engineering & Analytics solution built in Microsoft Fabric. Feat
 **Business Problem**
 Multinational manufacturing organisations operating across multiple countries and currencies face significant challenges in managing their Procure-to-Pay (P2P) process:
 No single view of spend across vendors, plants and legal entities operating in different currencies
+
 Manual reporting — procurement teams spending hours pulling data from disparate systems with no automated refresh
+
 Delayed visibility — invoice issues and delivery failures identified too late to act on
+
 No supplier performance tracking — no systematic way to measure which vendors deliver on time and within agreed terms
+
 Currency inconsistency — POs raised in USD, EUR, GBP and INR making spend comparison impossible without normalisation
 
 **Solution**
